@@ -1,0 +1,25 @@
+<!-- HEADING -->
+<div class="book">
+    <h3>Book List</h3>
+  </div>
+<!-- BUTTON -->
+<button type="button" (click)="logout()" class="btn btn-dark">Logout</button>
+<!-- TABLE FOR VIEW BOOK -->
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Bookname</th>
+            <th scope="col">ISBN</th>
+            <th scope="col">Author</th>
+            <th scope="col">CategoryId</th>
+            <th scope="col">Price</th>
+        </tr>
+        <tr *ngFor="let book of data">
+            <td>{{book.bookname}}</td>
+            <td>{{book.isbn}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.categoryid}}</td>
+            <td>{{book.price}}</td>
+        </tr>
+    </thead>
+</table>

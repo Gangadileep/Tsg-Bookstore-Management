@@ -1,0 +1,66 @@
+<div class="login-box">
+    <div class="container">
+        <div class="card col-md-6 mt-3 mx-auto">
+            <div class="card-body">
+                <h4 class="card-title text-center">ADD BOOK</h4>
+                <form (ngSubmit)="add()" [formGroup]="addForm" novalidate>
+                    <div class="alert alert-danger" [hidden]="!error || isLoading" translate>
+                        bOOK Details incorrect.
+                    </div>
+                    <div class="m-3">
+                        <!-- ISBN FEILD -->
+                        <div class="col-md-12">
+                            <label>ISBN</label> <input type="text" class="form-control" formControlName="isbn" id="isbn"
+                                required>
+                            <small [hidden]="addForm.controls['isbn'].valid || addForm.controls['isbn'].untouched"
+                                class="text-danger" translate> ISBN is required </small>
+                        </div>
+                        <!-- BOOKNAME FEILD -->
+                        <div class="col-md-12">
+                            <label>Bookname</label> <input type="text" class="form-control" formControlName="bookname"
+                                id="bookname" required>
+                            <small
+                                [hidden]="addForm.controls['bookname'].valid || addForm.controls['bookname'].untouched"
+                                class="text-danger" translate> Bookname is required </small>
+                        </div>
+                        <!-- AUTHOR FEILD-->
+                        <div class="col-md-12">
+                            <label>Author</label><input type="text" class="form-control" formControlName="author"
+                                id="author" required>
+                            <small [hidden]="addForm.controls['author'].valid || addForm.controls['author'].untouched"
+                                class="text-danger" translate> Author is required </small>
+                        </div>
+                        <!-- CATEGORY FEILD-->
+                        <div class="col-md-12">
+                            <label>Category</label> <select class="form-select mt-3" formControlName="categoryid"
+                                id="categoryid" required>
+                                <option *ngFor="let i of data" [value]="i.id">{{i.category}}</option>
+                            </select>
+                        </div>
+                        <!-- PRICE FEILD -->
+                        <div class="col-md-12">
+                            <label>Price</label> <input type="tel" class="form-control" formControlName="price"
+                                id="price" required>
+                            <small [hidden]="addForm.controls['price'].valid || addForm.controls['price'].untouched"
+                                class="text-danger" translate> Price is required </small>
+                        </div>
+                        <!-- ADMINID FEILD -->
+                        <div class="col-md-12">
+                            <label>Admin Id</label> <input type="tel" class="form-control" formControlName="adminid"
+                                id="adminid" required>
+                            <small [hidden]="addForm.controls['adminid'].valid || addForm.controls['adminid'].untouched"
+                                class="text-danger" translate> AdminId is required </small>
+                        </div>
+                        <!-- ADD BUTTON -->
+                        <div class="m-3">
+                            <button class="btn btn-primary w-100" type="submit"
+                                [disabled]="addForm.invalid || isLoading">
+                                <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
+                                <span translate>Add</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

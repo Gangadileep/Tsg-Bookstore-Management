@@ -1,0 +1,30 @@
+<!-- TABLE FOR BOOK LIST -->
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Bookname</th>
+      <th scope="col">ISBN</th>
+      <th scope="col">Author</th>
+      <th scope="col">CategoryId</th>
+      <th scope="col">Price</th>
+      <th scope="col">AdminId</th>
+      <th scope="col">Actions</th>
+    </tr>
+<!-- LOOPING DATA -->
+    <tr *ngFor="let book of data">
+      <td>{{book.bookname}}</td>
+      <td>{{book.isbn}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.categoryid}}</td>
+      <td>{{book.price}}</td>
+      <td>{{book.adminid}}</td>
+<!-- EDIT BUTTON -->
+      <a routerLink="/update"><button type="button" value="edit" class="btn btn-success">Edit</button></a>
+<!-- DELETE BUTTON -->
+      <a><button type="button" value="delete" (click)="deleteBook(book.isbn)"
+          class="btn btn-outline-danger">Delete</button></a>
+    </tr>
+  </thead>
+</table>
+<!-- ADD BUTTON TO ADD NEW BOOKS -->
+<a routerLink="/addbooks"><button type="button" class="btn btn-dark">Add</button></a>

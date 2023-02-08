@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                </a>
+                <br>
+                <br>
+                <!-- HOME  -->
+                <a [routerLink]="['/home']" class="nav-item nav-link text-uppercase" routerLinkActive="active">
+                    <i class="fas fa-home"></i>
+                    <span translate>Home</span>
+                </a>
+                <!-- USER VIEW BOOKS -->
+                <br>
+                <a [routerLink]="['/userview']" class="nav-item nav-link text-uppercase" routerLinkActive="active">
+                    <i class="fas fa-book"></i>
+                    <span translate>Books</span>
+                </a>
+                <br>
+                <!-- LOGOUT BUTTON -->
+                <a (click)="logout()" class="nav-item nav-link text-uppercase" routerLinkActive="active">
+                    <i class="fa fa-sign-out"></i>
+                    <span translate>Logout</span>
+                </a>
+                <hr>
+            </div>
+        </div>
+        <!-- BOOKSTORE DETAILS ON DASHBOARD -->
+        <div class="book">
+            <h1>Bookstore Management System</h1>
+            <div class="info">
+                <div>Bookstore is the place where the people will be able to get the books of their choice at reasonable
+                    price. There can be textbooks, story books and many other books available at the book store. But if
+                    it
+                    is the giant bookstore then the management of it will be very difficult. So, the books management
+                    system
+                    application will help in maintaining all these details at one stretch. The bookstore management
+                    system
+                    will help in maintaining the details of the books available, customers details, details of the books
+                    given on rent, sales record, employee's details and many other details can be mentioned in this
+                    application</div>
+                <div>Bookstore management system mainly focuses on the activities of a book store such as information on
+                    books and books sold to customers. The database flexibility, convenient features, the maximum
+                    increase
+                    in customer service, access to accurate information make this ideal for all sizes of book stores.
+                </div>
+                <div>A bookstore manager is responsible for overseeing the daily operations of a retail store that sells
+                    books. In this career, your job duties include managing a staff of employees, taking care of the
+                    daily
+                    accounting duties, and making sure the staff is providing outstanding customer service.</div>
+            </div>
+        </div>
+    </div>

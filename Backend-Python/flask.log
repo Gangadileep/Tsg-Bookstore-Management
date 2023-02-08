@@ -1,0 +1,23 @@
+2023-02-06 15:54:03,600 - services.log - ERROR - KeyError: 'adminid'
+2023-02-06 15:56:00,391 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '0' for key 'PRIMARY'")
+2023-02-06 15:56:19,049 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '0' for key 'PRIMARY'")
+2023-02-06 15:56:59,710 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '0' for key 'PRIMARY'")
+2023-02-06 15:57:23,689 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '0' for key 'PRIMARY'")
+2023-02-06 15:59:15,496 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '0' for key 'PRIMARY'")
+2023-02-06 16:00:01,722 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '0' for key 'PRIMARY'")
+2023-02-06 16:00:38,116 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '0' for key 'PRIMARY'")
+2023-02-06 16:05:27,263 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '' for key 'PRIMARY'")
+2023-02-06 17:17:11,727 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '0' for key 'PRIMARY'")
+2023-02-06 17:18:02,232 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '0' for key 'PRIMARY'")
+2023-02-06 17:22:33,385 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '0' for key 'PRIMARY'")
+2023-02-06 17:27:10,660 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '2147483647' for key 'PRIMARY'")
+2023-02-06 17:28:56,874 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '2147483647' for key 'PRIMARY'")
+2023-02-06 17:29:43,113 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '2147483647' for key 'PRIMARY'")
+2023-02-06 17:38:08,911 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '2147483647' for key 'PRIMARY'")
+2023-02-06 17:52:25,466 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '2147483647' for key 'PRIMARY'")
+2023-02-07 11:57:46,588 - services.log - ERROR - KeyError: 'categoryid'
+2023-02-07 12:01:18,353 - services.log - ERROR - KeyError: 'categoryid'
+2023-02-07 12:02:07,231 - services.log - ERROR - KeyError: 'categoryid'
+2023-02-07 12:02:54,181 - services.log - ERROR - KeyError: 'categoryid'
+2023-02-08 15:30:59,929 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '1234567890123' for key 'PRIMARY'")
+2023-02-08 16:45:28,768 - services.log - ERROR - pymysql.Error: (1062, "Duplicate entry '1234567890123' for key 'PRIMARY'")

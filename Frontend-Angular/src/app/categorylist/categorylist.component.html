@@ -1,0 +1,15 @@
+<div class="category">
+  <h3>Category List</h3>
+</div>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Category</th>
+    </tr>
+    <tr *ngFor="let category of data">
+      <td>{{category.id}}</td>
+      <td>{{category.category}}</td>
+    </tr>
+  </thead>
+</table>

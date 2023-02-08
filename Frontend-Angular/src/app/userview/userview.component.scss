@@ -1,0 +1,76 @@
+
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+    place-items: center;
+    background-repeat: no-repeat;
+}
+table{
+	width: 850px;
+	box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+    margin-inline-start: 400px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+    padding-bottom: 300px;
+}
+table, td, th{
+	padding: 20px;
+	border: 1px solid lightgray;
+	border-collapse: collapse;
+	text-align: center;
+	cursor: pointer;
+  
+}
+td{
+	font-size: 18px;
+}
+th{
+	background-color: grey;
+	color: white;
+}
+tr:nth-child(odd){
+	background-color: white;
+}
+tr:nth-child(even){
+	background-color: white;
+} 
+.tab{
+    position: relative;
+    z-index: #999;
+    margin-top: 60px;
+    display: block;
+    place-items: center;
+    float: inline-start;
+    margin-left: 123px;
+  
+}
+.bg{
+    background-color: antiquewhite;
+    width: 300px;
+    height: 400px;
+}
+button.btn.btn-dark {
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 6px;
+    margin-left:1400px;
+  }
+  .book{
+    margin-left: 600px;
+    font-size: 1.8em;
+    margin-top: 20px;
+    font-style: italic
+    
+}
